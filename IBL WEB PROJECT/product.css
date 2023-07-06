@@ -1,0 +1,39 @@
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  margin: 0 auto;
+  display: inline;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Optional: Add animation */
+.slide.fade {
+  animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
